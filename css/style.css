@@ -17,6 +17,16 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Утилиты */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
+
 /* Лого */
 .logo {
   font-family: "Raleway", sans-serif;
@@ -34,10 +44,17 @@ body {
 
 /* Навигация */
 .list {
+  margin: 0;
   list-style: none;
 }
-
+.nav {
+  display: flex;
+}
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -47,7 +64,13 @@ body {
   list-style: none;
   text-decoration: none;
 }
+.nav .item {
+  margin-right: 50px;
+}
 
+.nav .item:last-child {
+  margin-right: 0px;
+}
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
@@ -55,6 +78,7 @@ body {
 .nav-link.current {
   color: var(--accent-color);
 }
+
 /* Адрес */
 .address-info {
   font-weight: 500;

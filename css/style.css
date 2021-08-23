@@ -213,7 +213,7 @@ p {
 
 /* Чем мы занимаемся */
 .services {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .title {
   font-weight: 700;
@@ -301,9 +301,12 @@ p {
   font-style: normal;
   color: #ffffff;
 }
+.footer .item {
+margin-top: 9px;
+}
 .footer .address-info {
   display: inline-block;
-  margin-top: 9px;
+  
 
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
